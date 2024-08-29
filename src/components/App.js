@@ -16,7 +16,6 @@ const SECS_PER_QUESTION = 30;
 
 const initialState = {
   questions: [],
-  // status possíveis: "loading", "error","ready", "ative", "finished"
   status: "loading",
   index: 0,
   answer: null,
@@ -104,7 +103,6 @@ export default function App() {
       if (!res.ok) dispatch({ type: "dataFailed" });
 
       const data = await res.json();
-      // console.log(data);
       dispatch({ type: "dataReceived", payload: data });
     }
 

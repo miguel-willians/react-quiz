@@ -6,9 +6,9 @@ function Timer({ dispatch, secondsRemaining }) {
 
   useEffect(
     function () {
-      const id = setInterval(() => dispatch({ type: "tick" }), 1000); // Roda a função que for passada depois de certo tempo (dado em milissegundos)
+      const id = setInterval(() => dispatch({ type: "tick" }), 1000);
 
-      return () => clearInterval(id); // Cleanup function para matar o setInterval. Precisa do id do setInterval como argumento
+      return () => clearInterval(id);
     },
     [dispatch]
   );
