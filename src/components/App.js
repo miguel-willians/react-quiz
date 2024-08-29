@@ -30,7 +30,7 @@ function reducer(state, action) {
     case "dataReceived":
       return {
         ...state,
-        questions: action.payload,
+        questions: action.payload.questions,
         status: "ready",
       };
     case "dataFailed":
@@ -90,18 +90,22 @@ export default function App() {
     dispatch,
   ] = useReducer(reducer, initialState);
 
+  console.log(questions);
+
   const numQuestions = questions.length;
   const maxPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
   useEffect(function () {
     async function fetchData() {
-      const res = await fetch("http://localhost:8000/questions");
+      const res = await fetch(
+        "https://miguel-willians.github.io/questions-react-quiz/data/questions.json"
+      );
 
       if (!res.ok) dispatch({ type: "dataFailed" });
 
       const data = await res.json();
-      dispatch({ type: "dataReceived", payload: data });
       // console.log(data);
+      dispatch({ type: "dataReceived", payload: data });
     }
 
     fetchData();
