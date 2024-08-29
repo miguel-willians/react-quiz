@@ -1,10 +1,14 @@
-# React Quiz :US:
+# React Quiz | 🇺🇸
 
 Welcome to **React Quiz**! This is a quiz project developed with React. The quiz is of intermediate level and was created to provide an engaging and interactive testing experience.
 
 ## Access the Project
 
-You can access the live version of the project [here](http://example.com).
+You can access the live version of the project [here](https://react-quiz-38wx.onrender.com).
+
+## Readme in Portuguese
+
+For the Portuguese version of this README, click [here](README.pt-br.md).
 
 ## Current Features
 
