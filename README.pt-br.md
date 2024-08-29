@@ -4,7 +4,7 @@ Bem-vindo ao **React Quiz**! Este é um projeto de quiz desenvolvido com React. 
 
 ## Acesse o Projeto
 
-Você pode acessar a versão ao vivo do projeto [aqui](https://react-quiz-38wx.onrender.com).
+Você pode acessar o projeto [aqui](https://react-quiz-x1ku.onrender.com).
 
 ## Readme em Inglês
 
